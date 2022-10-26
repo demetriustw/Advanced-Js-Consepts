@@ -1,0 +1,129 @@
+:root {
+  --primary-color: rgb(255, 92, 92);
+  --primary-variant: #ff2d2d;
+  --secondary-color: #1b9999;
+  --on-primary: rgb(250, 250, 250);
+  --on-background: gray;
+  --on-background-alt: rgba(66, 66, 66, 0.7);
+  --background: rgb(255, 255, 255);
+  --box-shadow: 0 10px 40px 2px rgba(0, 0, 0, 0.5);
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: rgb(64, 61, 61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+
+  margin: 30px 60px;
+  width: 80vw;
+  height: 80vh;
+  background: var(--on-background);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 600px;
+  height: 150px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+  color: white;
+  background: #ff3482;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  margin-bottom: 80px;
+  margin-left: 30px;
+  cursor: default;
+  filter: brightness(80%);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 1500px;
+  margin-left: 35px;
+}
+
+.about-container div {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 25px;
+  width: 300px;
+  background: rgb(195, 124, 43); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffe878,
+    rgb(195, 124, 43)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ffe878, rgb(195, 124, 43));
+  box-shadow: var(--box-shadow);
+}
+
+.test {
+  margin: 50px;
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 40px;
+  user-select: none;
+}
+
+#img-container .far {
+  color: rgb(124, 30, 255);
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.show h1 {
+  padding-top: 100px;
+  padding-left: 430px;
+  padding-bottom: 50px;
+  width: 200px;
+  height: 150px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+  border: none;
+  border-radius: 5px;
+}
